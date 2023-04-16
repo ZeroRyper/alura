@@ -1,0 +1,44 @@
+<meta charset="UTF-8">  
+
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+<script>
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+
+        
+    }
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        saltarlinea();
+    }
+    function calcularImc(peso,altura){
+        return peso/(altura*altura);
+      
+    }
+    function sorteo(n){
+        return Math.round(Math.random()*n);
+    }
+    var numeroPensado = sorteo(10);
+    var numerLanzado=parseInt(prompt("Ingrese un numero entre 0-10"));
+    
+    // if(numeroPensado==numerLanzado){
+    //     imprimir("Usted acerto");
+    // }
+    // else{
+    //     imprimir("Usted erro, el numero pensado era "+numeroPensado);
+    // }
+    if(numeroPensado==numerLanzado){
+        imprimir("Usted acerto");
+    }
+    else if(numeroPensado>numerLanzado){
+        imprimir("Numero pensado es mayor al lanzado");
+    }
+    else{
+        imprimir("Numero pensado es menor al lanzado");
+    }
+    
+    </script>
