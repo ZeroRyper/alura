@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>Tabla Multiplicar</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    var multiplicar=1;
+    imprimir("While");
+    while(multiplicar<=10){
+        imprimir(5*multiplicar);
+        multiplicar++;
+    }
+    imprimir("For");
+    for( var multiplicar=1;multiplicar<=10;multiplicar++){
+        imprimir(5*multiplicar);
+    }
+</script>

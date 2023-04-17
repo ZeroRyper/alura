@@ -23,22 +23,37 @@
         return Math.round(Math.random()*n);
     }
     var numeroPensado = sorteo(10);
-    var numerLanzado=parseInt(prompt("Ingrese un numero entre 0-10"));
+    var intetos=3;
+    var contador=1;
+
+    while(contador<=intetos){
+        var numerLanzado=parseInt(prompt("Ingrese un numero entre 0-10"));
+        if(numeroPensado==numerLanzado){
+         alert("usted acerto, en el intento"+ contador +"el numero pensado era"+numeroPensado);
+         break;
+     }
+     else{
+        alert("usted erro");
+     }
+     contador++;
+    }
     
+    
+     if(numeroPensado==numerLanzado){
+         imprimir("Usted acerto, en el intento"+ intento +"el numero pensado era"+numeroPensado);
+     }
+     else{
+         imprimir("Usted erro, el numero pensado era "+numeroPensado);
+     }
+
     // if(numeroPensado==numerLanzado){
     //     imprimir("Usted acerto");
     // }
-    // else{
-    //     imprimir("Usted erro, el numero pensado era "+numeroPensado);
+    // else if(numeroPensado>numerLanzado){
+    //     imprimir("Numero pensado es mayor al lanzado");
     // }
-    if(numeroPensado==numerLanzado){
-        imprimir("Usted acerto");
-    }
-    else if(numeroPensado>numerLanzado){
-        imprimir("Numero pensado es mayor al lanzado");
-    }
-    else{
-        imprimir("Numero pensado es menor al lanzado");
-    }
+    // else{
+    //     imprimir("Numero pensado es menor al lanzado");
+    // }
     
     </script>
