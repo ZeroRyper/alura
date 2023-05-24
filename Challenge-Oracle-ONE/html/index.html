@@ -16,16 +16,7 @@
         <img src="../assets/Logo-1.png" alt="">
     </header>
     <section class="texto-ingresado">
-        <textarea name="texto" id="texto-area" cols="35" rows="15" placeholder="Ingrese el texto aqui"></textarea>
-    </section>
-    <section class="texto-mensaje">
-        <div id="myDIV">
-            <img src="../assets/Muñeco.png" alt="">
-            <h2>Ningun mesaje fue encontrado</h2>
-            <p>Ingresa el texto que deasees encriptar o desencriptar</p>
-        </div>
-        <button id="miBoton" onclick="copyToClipBoard()">Copiar</button>
-
+        <textarea name="texto" id="texto-area" cols="40" rows="15" placeholder="Ingrese el texto aqui"></textarea>
     </section>
     <section class="enviar">
         <div class="aviso">
@@ -36,9 +27,18 @@
         </div>
 
         <div class="botones">
-            <button onclick="encriptar()">Encriptar</button>
-            <button onclick="desencriptar()">Desencriptar</button>
+            <button class="boton-estilo" onclick="encriptar()">Encriptar</button>
+            <button class="boton-estilo" onclick="desencriptar()">Desencriptar</button>
         </div>
+    </section>
+    <section class="texto-mensaje">
+        <div id="myDIV">
+            <img src="../assets/Muñeco.png" alt="">
+            <h2>Ningun mesaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <button class="boton-estilo" id="miBoton" onclick="copyToClipBoard()">Copiar</button>
+
     </section>
     
     <script src="../js/script.js"></script>

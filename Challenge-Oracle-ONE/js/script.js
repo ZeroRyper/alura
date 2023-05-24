@@ -5,8 +5,9 @@ function encriptar() {
   var boton = document.getElementById("miBoton");
   boton.style.display = "grid";
   var texto = textarea.value;
+
   if (texto.length == 0) {
-    elementoMostrado.textContent = "";
+    return;
   }
   for (var i = 0; i < texto.length; i++) {
     var letra = texto.charAt(i);
@@ -41,6 +42,9 @@ function desencriptar() {
   var textarea = document.getElementById("texto-area");
   var elementoMostrado = document.getElementById("myDIV");
   var texto = textarea.value;
+  if(texto==""){
+    return;
+  }
   var desencriptada = [];
   for (x = 0; x < texto.length; x++) {
     if (texto.substr(x, 2) == "ai") {
