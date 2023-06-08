@@ -1,0 +1,195 @@
+@mixin btn-base {
+  border-radius: 1rem;
+  font-size: 1rem;
+  width: 300px;
+  height: 45px;
+}
+$color-main: #0567bd;
+body{
+  background:url(../assets/dragon-scales.svg);
+  width: 100%;
+  height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  
+}
+body{
+  display: flex;
+}
+textarea{
+    background-color: transparent;
+    display: block;
+    border: none;
+    resize: none;
+    height: 100%;
+    outline: none;
+    caret-color: #FFF; /* Cambia el color del cursor */
+    color: #FFF;
+    &::placeholder{
+      color:white ;
+
+    }
+   
+}
+img{
+  max-width: 100%;
+  width: 80%;
+  display: block;
+}
+.main{
+  min-height: 95vh;
+  padding: 2em 0;
+  display: flex;
+  width: 100%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+.texto-ingresado{
+  margin-top: 4em;
+  min-height: 60vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+}
+.contenedor-mensaje{
+  margin: 0 2rem;
+  color: #FFF;
+  background-color: rgb(112, 81, 212);
+  border-radius: 10px;
+  .ningun_mensaje{
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mesaje_encontrado{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+  }
+}
+.mesaje_encontrado{
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.muneco_texto{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.botones{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.boton-main{
+  width: 40rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #7051d4;
+  color: #FFF;
+  transition: 1s all;
+  &:hover{
+    background-color: #0781ed;
+    transform: scale(1.1);
+   }
+  
+}
+.boton-copy{
+  width: 100%;
+  height: 2rem;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #0567bd;
+  color: #FFF;
+  transition: 1s all;
+ &:hover{
+  background-color: #0781ed;
+  transform: scale(1.1);
+ }
+}
+
+.mesaje_style{
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+.mesaje_encriptado{
+  text-align: center;
+  font-size: 1em;
+  word-break: break-all;
+}
+.aviso{
+  display: flex;
+  gap: 5px;
+  margin: 5px;
+  svg{
+    display: flex;
+    width: 20px;
+  }
+  p{
+    color: white;
+    display: flex;
+    align-items: center;
+    
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    flex-direction: column;
+  }
+  main{
+    flex-direction: column;
+  }
+  .contenedor-mensaje{
+    width: 90%;
+  }
+  .texto-ingresado{
+    width: 90vw;
+  }
+  .muneco_img{
+    display: none;
+  }
+  .muneco_texto{
+    margin-top: 0;
+  }
+  textarea{
+    height: 60vh;
+  }
+  .logo{
+    justify-content: start;
+  }
+  .boton-copy{
+    width: 80%;
+    height: 3rem;
+  }
+
+}
+@media screen and (max-width: 426px){
+  .contenedor-mensaje{
+    width: 80%;
+  }
+  .texto-ingresado{
+    width: 80%;
+
+  }
+}
+
