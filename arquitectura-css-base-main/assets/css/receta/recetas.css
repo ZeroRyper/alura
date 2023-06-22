@@ -1,0 +1,7 @@
+.recetas{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(230,206,183) ;
+    justify-content: center;
+    width: 100%;
+}

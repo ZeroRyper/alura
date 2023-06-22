@@ -1,0 +1,15 @@
+.rodapie__titulo{
+    color: rgb(144,140,140);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+@media screen and (min-width:0){
+    .rodapie__titulo{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:768px){
+    .rodapie__titulo{
+        font-size: 1.25rem;
+    }
+}
