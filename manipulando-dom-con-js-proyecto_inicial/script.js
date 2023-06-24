@@ -17,12 +17,12 @@ const createTask=(evento)=>{
     const titleTask=document.createElement('span');
     titleTask.classList.add('task');
     titleTask.innerText=value;
-    taskContent.appendChild(checkComplete());
-    taskContent.appendChild(titleTask);
+    taskContent.appendChild(checkComplete());//Metemos checkComplete en taskContent
+    taskContent.appendChild(titleTask);//Lo metemos en taskContent
 
-    task.appendChild(taskContent);//innerHTML nos ayuda agragar codigo html
+    task.appendChild(taskContent);
     task.appendChild(deleteIcon());
-    list.appendChild(task);//Agrega al list en este caso al ul card-list 
+    list.appendChild(task);//Agrega al ul card-list 
 //     insertBefore(padre, hijo): Coloca un nodo antes del otro
 //     replaceChild(elemento1, elemento2): Sustituye el nodo del elemento 1 por el nodo del elemento 2
 //     removeChild(elemento): Remueve un nodo del árbol
