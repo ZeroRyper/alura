@@ -26,16 +26,20 @@ const crearNuevaLinea=(nombre,email,id)=>{
       </ul>
     </td>`;
     linea.innerHTML=contenido;
-    const btn=linea.querySelector("button");
-    btn.addEventListener("click",()=>{
-      const id=btn.id;
-      clientServices.eliminarCliente(id)
-      .then((respuesta)=>{
-        console.log(respuesta);
-      })
-      .catch((err)=>alert("Ocurrio un error"));
-
-    })
+    const btn = linea.querySelector("button");
+btn.addEventListener("click", async () => {
+  try {
+    const btid=btn.id;
+    const id = await clientServices.eliminarCliente(btid);
+    if (id) {
+      console.log(id);
+    } else {
+      throw new Error();
+    }
+  } catch (error) {
+    window.location.href = "/CRUD_JS_Async-proyecto_base/screens/error.html";
+  }
+});
     return linea;
 
 }
