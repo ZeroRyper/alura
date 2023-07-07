@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(220, 217, 217);
+}
+
+.perfil__img {
+  width: 20%;
+  border-radius: 500px;
+}
+
+.referencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.referencias .skills {
+  margin: 2rem auto;
+}
+.referencias .hobbies {
+  margin: 4rem auto;
+}
+.referencias h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.referencias .skills__lista {
+  display: flex;
+}
+.referencias .skills__lista .lista__items-skills {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+  justify-content: flex-end;
+  background-color: aliceblue;
+  height: 8rem;
+  width: 8rem;
+  padding: 0.1rem 1rem;
+  margin-right: 1rem;
+}
+
+.formacion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.formacion .formacion__encabezado {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.formacion__academica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.formacion__span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  margin: auto 0.5rem;
+}
+.formacion__span img {
+  width: 300px;
+  height: 250px;
+}
+.formacion__span h3 {
+  font-size: 1rem;
+  margin: 0 auto;
+}
+.formacion__span p {
+  font-size: 1rem;
+  margin: 0.2rem auto;
+}
+
+.experiencia {
+  margin-top: 2rem;
+}
+.experiencia .experiencia__encabezado {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.experiencia article {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.experiencia .encriptador__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.experiencia .encriptador__img-encriptador {
+  width: 50%;
+  height: 350px;
+}
+
+.contacto {
+  display: flex;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.contacto form h3 {
+  font-size: 2rem;
+}
+.contacto input {
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+.contacto textarea {
+  margin-top: 1rem;
+  resize: none;
+}
+.contacto .btn_submit {
+  margin-top: 1rem;
+  padding: 1rem;
+  align-self: self-start;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+
+/*# sourceMappingURL=styles.css.map */
