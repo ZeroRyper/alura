@@ -1,3 +1,5 @@
+document.getElementById("miFormulario").addEventListener("submit", function(event) {
+    event.preventDefault();
 const sgMail = require('@sendgrid/mail');
 const API_KEY = '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';
 sgMail.setApiKey(API_KEY);
@@ -28,3 +30,4 @@ sgMail
   .catch((error) => {
     console.error(error);
   });
+});
