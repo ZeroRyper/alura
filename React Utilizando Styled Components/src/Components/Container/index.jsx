@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Title from "../Title";
 import Account from "../Account";
 import List from "../List";
+import { Title } from "../UI";
 
 const StyledContainer=styled.div`
 background-color: ${({theme})=>theme.body};

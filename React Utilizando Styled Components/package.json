@@ -3,6 +3,7 @@
   "author": "HarlandLohora",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zeroryper.github.io/smartbank/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
