@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/smartbank/build/static/css/main.31d6cfe0.css",
-    "main.js": "/smartbank/build/static/js/main.f379c2a0.js",
+    "main.js": "/smartbank/build/static/js/main.f3eecdd0.js",
     "static/media/dinero.svg": "/smartbank/build/static/media/dinero.77aae2849a911a1104db3b41a076cfed.svg",
     "static/media/alimentacion.svg": "/smartbank/build/static/media/alimentacion.c8e70a258eb596777e30c13983779417.svg",
     "static/media/themeOn.svg": "/smartbank/build/static/media/themeOn.e0f6e4537091311616ac998e52078aa0.svg",
@@ -14,10 +14,10 @@
     "static/media/themeOff.svg": "/smartbank/build/static/media/themeOff.63bc562023ca98d67afbc72f707defc4.svg",
     "static/media/ojo.svg": "/smartbank/build/static/media/ojo.a05ab7e83f7d2cafbac4edfdb2c1dc75.svg",
     "index.html": "/smartbank/build/index.html",
-    "main.f379c2a0.js.map": "/smartbank/build/static/js/main.f379c2a0.js.map"
+    "main.f3eecdd0.js.map": "/smartbank/build/static/js/main.f3eecdd0.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.f379c2a0.js"
+    "static/js/main.f3eecdd0.js"
   ]
 }
